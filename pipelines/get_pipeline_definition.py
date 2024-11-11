@@ -15,7 +15,6 @@ from __future__ import absolute_import
 
 import argparse
 import sys
-import traceback
 
 from pipelines._utils import get_pipeline_driver
 
@@ -65,7 +64,6 @@ def main():  # pragma: no cover
             print(content)
     except Exception as e:  # pylint: disable=W0703
         print(f"Exception: {e}")
-        traceback.print_exc()
         sys.exit(1)
 
 
